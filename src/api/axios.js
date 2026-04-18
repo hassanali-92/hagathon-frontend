@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     // Production mein env variable use karega, warna local
-    baseURL: process.env.REACT_APP_API_URL || 'https://hackaton-backend-1-qk2c.onrender.com/api',
+    baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
     timeout: 30000, // 30 seconds timeout (Render cold start ke liye zaroori hai)
     headers: {
         'Content-Type': 'application/json'
